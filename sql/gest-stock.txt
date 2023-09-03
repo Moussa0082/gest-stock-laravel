@@ -1,0 +1,104 @@
+
+create database gest-stock;
+
+create table client(
+ idClt int prymary key auto-increment,
+ nomClt varchar(100) not null,
+ prenomclt varchar(100) not null,
+ sexe varchar(20) not null,
+ numeroClt varchar(50) not null,
+ adresseClt varchar(200) not null
+ ); 
+
+
+ -------------------db---------------
+ table Admin
+
+ + idAdmin : int
+
++ nomAdmin : String
+
++ prenomAdmin : String
+
++ email : String
+
++ numero : int
+
++ motDePasse : String
+
+table client
+
++ idClient : int
+
++ nomClient : String
+
++ prenomClient : String
+
++ sexeClient : String
+
++ numeroClient : int
+
++ adresseClient : String
+
+table fournisseur
++ idFrs : int
+
++ nomFrs : String
+
++ prenomFrs : String
+
++ sexeFrs : String
+
++ numeroFrs : int
+
++ adresseFrs : String
+
+table commande
++ idAchat : int
+
++ dateAchat: date
+
++ idP: int 
+
++ idClient: int
+
++ idEmp : int
+
+table produit
++ idP : int
+
++prixP:int
+
++ nomP : String
+
++ qte:int
+
++ description:String
+
++ dateCreation:date
+
++ idFrs:int
+
+table employer
+ idEmp : int
+
++ nomEmp : String
+
++ prenomEmp : String
+
++ email : String
+
++ numero : int
+
++adresseEmp:String
+
++ motDePasse : String
+
++idA:int
+
+table categorie
++ idCat : int
+
++ libelle : String
+
+
